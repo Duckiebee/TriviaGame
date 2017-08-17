@@ -1,9 +1,44 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Trivia Game</title>
+    <title>Harry Potter Trivia Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3 text-center">Harry Potter Trivia</h1>
+    </div>
+</div>
+<div class="form-actions text-center">
+    <button id="startButton" class="btn btn-success">START</button>
+</div>
+<div class="container">
+    <div id="score" class="scoreboard"></div>
+    <div id="timer" class="scoreboard"></div>
+    <section id="question">
+        <div class="sectionBG"></div>
+        <div id="questionText"></div>
+    </section>
+    <form action="" id="choices">
+        <div class="sectionBG"></div>
+        <input type="radio" name="answer" class="answer" data-choice=0>
+        <label for="radioOption" class="answerText"></label><br/>
+        <input type="radio" name="answer" class="answer" data-choice=1>
+        <label for="radioOption1" class="answerText"></label><br/>
+        <input type="radio" name="answer" class="answer" data-choice=2>
+        <label for="radioOption2" class="answerText"></label><br/>
+        <input type="radio" name="answer" class="answer" data-choice=3>
+        <label for="radioOption3" class="answerText"></label><br/>
+        <div id="result"></div>
+        <h2 id="endGameMessage" class="gameOverText"></h2>
+        <button id="playAgain" class="btn btn-success" style="display: none">PLAY AGAIN</button>
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/javascript/HpQuestions.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
